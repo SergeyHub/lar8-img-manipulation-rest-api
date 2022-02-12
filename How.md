@@ -13,7 +13,7 @@ drop table table_name;
 exit   
 php artisan migrate
  
-![Screenshot](how_images/EER_diagram.JPG)  
+![Screenshot](how_images/EER_Diagram.JPG)  
  
 npm install  
 npm run dev  
