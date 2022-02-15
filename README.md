@@ -108,5 +108,9 @@ image.intervention.io
 #####4. Create ImageManipulation model, migration and controller. Create ResizeImageRequest class    
 
 #####5.Implement Registration and Login. Install Breeze Package     
-Install Breeze Package
-composer require laravel/breez --dev
+Install Breeze Package  
+`composer require laravel/breeze --dev`
+`php artisan breeze:install`
+`npm install`
+`npm run dev`
+
