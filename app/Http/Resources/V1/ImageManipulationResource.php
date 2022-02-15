@@ -26,4 +26,3 @@ class ImageManipulationResource extends JsonResource
         ];
     }
 }
-

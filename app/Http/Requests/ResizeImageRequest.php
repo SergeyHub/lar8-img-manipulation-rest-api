@@ -30,22 +30,21 @@ class ResizeImageRequest extends FormRequest
             'h' => 'regex:/^\d+(\.\d+)?%?$/',
             'album_id' => 'exists:\App\Models\Album,id'
         ];
-
-        $image = $this->all()['image'];
-        //echo '<pre>';
-        //var_dump($image);
-        //echo '</pre>';
-        //exit;
-        if ($image && $image instanceof UploadedFile) {
+        $all = $this->all();
+        if (isset($all['image']) && $all['image'] instanceof UploadedFile) {
             $rules['image'][] = 'image';
         } else {
             $rules['image'][] = 'url';
         }
 
-        //echo '<pre>';
-        //var_dump($rules);
-        //echo '</pre>';
-        //exit;
         return $rules;
+    }
+
+    public function messages()
+    {
+        return [
+            'w.regex' => 'Please specify width as a valid number in pixels or in %',
+            'h.regex' => 'Please specify height as a valid number in pixels or in %',
+        ];
     }
 }

@@ -105,4 +105,8 @@ Implement image resize and save in the database
 image.intervention.io  
 `composer require intervention/image`   
 
-#####4.Put models and controllers in V1 namespace  
+#####4. Create ImageManipulation model, migration and controller. Create ResizeImageRequest class    
+
+#####5.Implement Registration and Login. Install Breeze Package     
+Install Breeze Package
+composer require laravel/breez --dev
