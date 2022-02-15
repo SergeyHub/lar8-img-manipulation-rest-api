@@ -113,4 +113,11 @@ Install Breeze Package
 `php artisan breeze:install`
 `npm install`
 `npm run dev`
+`git push -u origin master` 
 
+#####6. Sanctum. Edit api.php. Generate Access Token
+Create DashboardController  
+`php artisan make:controller DashboardController`  
+Edit web.php. Add DashBoardController routes.
+
+#####7. Edit dashboard.blade.php
