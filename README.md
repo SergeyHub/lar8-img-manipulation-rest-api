@@ -109,11 +109,11 @@ image.intervention.io
 
 #####5.Implement Registration and Login. Install Breeze Package     
 Install Breeze Package  
-`composer require laravel/breeze --dev`
-`php artisan breeze:install`
-`npm install`
-`npm run dev`
-`git push -u origin master` 
+`composer require laravel/breeze --dev`  
+`php artisan breeze:install`  
+`npm install`  
+`npm run dev`  
+`git push -u origin master`   
 
 #####6. Sanctum. Edit api.php. Generate Access Token
 Create DashboardController  
@@ -121,3 +121,4 @@ Create DashboardController
 Edit web.php. Add DashBoardController routes.
 
 #####7. Edit dashboard.blade.php
+Create button-link.blade.php  token-create.blade token-show.blade
