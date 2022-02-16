@@ -1,9 +1,22 @@
 <?php
+/**
+ * User: Zura
+ * Date: 11/19/2021
+ * Time: 10:20 PM
+ */
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 
+use Illuminate\Http\Request;
+use Laravel\Sanctum\PersonalAccessToken;
+
+/**
+ * Class DashboardController
+ *
+ * @author Zura Sekhniashvili <zurasekhniashvili@gmail.com>
+ * @package App\Http\Controllers
+ */
 class DashboardController extends Controller
 {
     public function dashboard(Request $request)

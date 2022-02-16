@@ -121,4 +121,6 @@ Create DashboardController
 Edit web.php. Add DashBoardController routes.
 
 #####7. Edit dashboard.blade.php
-Create button-link.blade.php  token-create.blade token-show.blade
+Create button-link.blade.php  token-create.blade token-show.blade  
+
+#####8. Edit dashboard.blade.php
