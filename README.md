@@ -1,4 +1,6 @@
-####Installation Project. How use.
+
+#### Installation Project. How use.
+
 1. Clone the project  
 2. Navigate to the project root directory using command line  
 3. Run composer install  
@@ -25,10 +27,10 @@
       CustomLog /path-to-logs-folder/access.log combined
   </VirtualHost>
   ```
-####Main stages of development
+#### Main stages of development
 How to Build REST API in Laravel 8  
 `https://www.youtube.com/watch?v=bvvVX9Pny84`    
-#####1. Installation Project Create Database
+##### 1. Installation Project Create Database
 
 `composer create-project --prefer-dist  laravel/laravel .`    
 Edit  env. file  
@@ -55,7 +57,7 @@ git commit –m "Comment"
 git remote add origin https://github.com/SergeyHub/repository-name.git  
 git push -u origin master  
 
-#####2. Add album model, migration and implement CRUD   
+##### 2. Add album model, migration and implement CRUD   
 php artisan make:model Album -m       
 `migrations/2022_02_12_231026_create_albums_table.php`  
 ```
@@ -94,7 +96,7 @@ php artisan migrate
 php artisan make:resource V1\\AlbumResource  
 `git pull --rebase origin master`  
 `git push -u origin master`  
-#####3.Implement image resize 
+##### 3.Implement image resize 
 Create ImageManipulation model, migration and controller.  
 Create ResizeImageRequest class  
 Install `intervention/image` package  
@@ -105,9 +107,9 @@ Implement image resize and save in the database
 image.intervention.io  
 `composer require intervention/image`   
 
-#####4. Create ImageManipulation model, migration and controller. Create ResizeImageRequest class    
+##### 4. Create ImageManipulation model, migration and controller. Create ResizeImageRequest class    
 
-#####5.Implement Registration and Login. Install Breeze Package     
+##### 5.Implement Registration and Login. Install Breeze Package     
 Install Breeze Package  
 `composer require laravel/breeze --dev`  
 `php artisan breeze:install`  
@@ -115,12 +117,17 @@ Install Breeze Package
 `npm run dev`  
 `git push -u origin master`   
 
-#####6. Sanctum. Edit api.php. Generate Access Token
+##### 6. Sanctum. Edit api.php. Generate Access Token
 Create DashboardController  
 `php artisan make:controller DashboardController`  
 Edit web.php. Add DashBoardController routes.
 
-#####7. Edit dashboard.blade.php
+##### 7. Edit dashboard.blade.php
 Create button-link.blade.php  token-create.blade token-show.blade  
 
-#####8. Edit dashboard.blade.php
+##### 8. Edit dashboard.blade.php
+git init  
+git add .  
+git commit –m "Comment"  
+git remote add origin https://github.com/SergeyHub/repository-name.git  
+git push -u origin master  
